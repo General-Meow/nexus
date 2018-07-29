@@ -7,8 +7,8 @@ MAINTAINER Paul Hoang 2018-07-29
 RUN ["apt", "update"]
 RUN ["apt", "upgrade", "-y"]
 
-ADD ["./files/jdk-8u171-linux-arm32-vfp-hflt.tar.gz", "/home"]
-ENV JAVA_HOME=/home/jdk1.8.0_171
+ADD ["./files/jdk-8u181-linux-arm32-vfp-hflt.tar.gz", "/home"]
+ENV JAVA_HOME=/home/jdk1.8.0_181
 ENV CLASSPATH=.
 ENV PATH=${JAVA_HOME}/bin:${PATH}
 
