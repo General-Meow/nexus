@@ -22,4 +22,5 @@ WORKDIR /home/nexus/nexus-3.13.0-01/bin
 ENV INSTALL4J_JAVA_HOME=${JAVA_HOME}
 
 EXPOSE 8081
+VOLUME ["/home/nexus/sonatype-work"]
 ENTRYPOINT ["./nexus", "run"]
